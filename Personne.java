@@ -16,3 +16,4 @@ public abstract class Personne {
     }
     public String toString() { return this.nom+" "+this.prenom; }
 }
+//test

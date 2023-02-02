@@ -3,18 +3,20 @@ public class Architecte extends Personne{
     private boolean inscriptionOrdre;
 
 
-    public Architecte(String nom, String prenom, String conseilRegional, String telephone, String addresse,boolean inscriptionOrdre) {
+    public Architecte(String nom, String prenom, String conseilRegional, String telephone, boolean inscriptionOrdre) {
         super(nom, prenom);
         this.inscriptionOrdre= inscriptionOrdre;
         this.addresse=addresse;
-        if (telephoneValidate(telephone)){
+        if (telephoneValide(telephone)){
             this.telephone=telephone;
         }else {
-            this.telephone="";
+            this.telephone ="";
         }
+        Maj_conseilRegional();
+
     }
-    private boolean  telephoneValidate(String telephone){
-        return true;
-    }
+    private boolean telephoneValide(String telephone)
+
     public void Maj_conseilRegional(){}
+
 }
